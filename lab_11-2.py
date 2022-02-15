@@ -1,12 +1,7 @@
 # Author: SCT (AMDG) 2/8/22
 
-import string
-
-my_file = open("alma_mater.txt", "r")
-while True:
-     line = my_file.readline()
-     if len(line) == 0:
-           break
-     print (line, end="")
-     print(" ")
-my_file.close()
+my_file = open("alma_mater.txt", "r")  # Opens file
+while True:  # creates while loop
+      lines = my_file.readlines()  # stores info in file as variable 'line'
+      for lines in reversed(lines):  # reverses each lines order
+            print(lines)  # prints the lines in the new order
